@@ -13,7 +13,7 @@ workflow Get-VMName
     
     # Connect to Azure
     Add-AzureAccount -Credential $Cred | Write-Verbose
-    
+    Write-Debug "It was updated on GitHub"
     # Select the Azure subscription you want to work against
     # TODO: Fill in the -SubscriptionName parameter with the name of your Azure subscription
     Select-AzureSubscription -SubscriptionName "Visual Studio Ultimate with MSDN" | Write-Verbose
